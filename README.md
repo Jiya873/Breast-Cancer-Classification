@@ -22,3 +22,9 @@ The dataset is downloaded from Kaggle using the `kagglehub` library. The dataset
 * Clone the repository and navigate to the project directory
 * Open the `Breast_Cancer_Classification_with_NN.ipynb` notebook
 * Run the cells in the notebook to download the dataset, preprocess the data, and train the neural network model
+* The dataset is then loaded into a pandas DataFrame:
+  ```sh
+  import os
+  file_path = os.path.join(path, 'data.csv')
+  df = pd.read_csv(file_path)
+  ```
